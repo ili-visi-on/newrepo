@@ -1,0 +1,64 @@
+.closed{
+    display: none;
+}
+
+.closeButton{
+    position: absolute;
+
+top: 20px;
+right: 20px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.47);
+    backdrop-filter: blur(1.5px);
+}
+.modal{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    box-shadow: 5px 5px 10px rgb(82, 79, 79);
+    transition-duration: 500ms;
+    padding: 10px;
+}
+
+.modalClosed{
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+.inputt{
+display: flex;
+flex-direction: column;
+align-items: self-start;
+margin-top: 20px;
+}
+
+.inputt input{
+width: 400px;
+height: 20px;
+outline: none;  
+}
+
+.inputt input::placeholder{
+    color: #ea1bd6;
+    font-size: 20px;
+    text-align: left;
+}
+
+.inputt input:focus{
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.radio div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
