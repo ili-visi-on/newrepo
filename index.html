@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -13,45 +16,53 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque rerum ex sit, fugit vitae nulla repellendus atque veniam quos?</p>
     <button class="openmodal">Open Modal</button>
     
-    <div class="overlay"><div class="modal modalClosed"><h1>Modal Window</h1><button class="closeButton">close</button>
+    <div class="overlay"><div class="modal modalClosed"><button class="closeButton">close</button>
     <form class="userform" action="text.html">
         <div class="inputt">
-        <label for="name">Name</label>
-        <input placeholder="NAME" id="name" type="text">
+            <label for="name">Ваше ім'я</label>
+            <input placeholder="Наприклад: Іван" id="name" type="text">
         </div>
-          <div class="inputt">
-        <label for="surname">Surname</label>
-        <input placeholder="SURNAME" id="surname" type="text">
+        <div class="inputt">
+            <label for="surname">Ваше прізвище</label>
+            <input placeholder="Наприклад: Петренко" id="surname" type="text">
         </div>
-         <div class="inputt">
-        <label for="date">Date</label>
-        <input placeholder="mm/dd/yyyy" id="date" type="date">
+        <div class="inputt">
+            <label for="age">Ваш вік</label>
+            <input placeholder="Наприклад: 25" id="age" type="number">
+        </div>
+        <div class="radio">
+        <div class="inputt">
+            <label for="math">Математика</label>
+            <input id="math" type="checkbox" name="skills" >
+        </div>
+        <div class="inputt">
+            <label for="ukr">Українська мова</label>
+            <input id="ukr" type="checkbox" name="skills" >
+        </div>
+        <div class="inputt">
+            <label for="eng">Англійська мова</label>
+            <input id="eng" type="checkbox" name="skills" >
+        </div>
+        <div class="inputt">
+            <label for="deu">Німецька мова</label>
+            <input id="deu" type="checkbox" name="skills" >
+        </div>
+        <div class="inputt">
+            <label for="phy">Фізика</label>
+            <input id="phy" type="checkbox" name="skills" >
+        </div>
+        <div class="inputt">
+            <label for="chem">Хімія</label>
+            <input id="chem" type="checkbox" name="skills" >
+        </div>
+        <div class="inputt">
+            <label for="bio">Біологія</label>
+            <input id="bio" type="checkbox" name="skills" >
+        </div>
+        </div>
         <div>
-            <label for="male">Male</label>
-            <input id="male" type="radio" name="gender" > 
+            <button type="submit">Відправити дані</button>
         </div>
-        <div>
-            <label for="female">Female</label> 
-            <input id="female" type="radio" name="gender" > 
-        </div>
-         <div>
-            <label for="Other">Other</label>
-            <input id="Other" type="radio" name="gender" >
-        </div>
-         <div>
-            <label for="HTML">HTML</label>
-            <input id="HTML" type="checkbox" name="skills" >
-        </div>
-        <div>
-            <label for="CSS">CSS</label>
-            <input id="CSS" type="checkbox" name="skills" >
-            <div>
-               <label for="JS">JS</label>
-               <input id="JS" type="checkbox" name="skills" >
-           </div>
-           <div>
-            <button type="submit">Submit</button>
-           </div>
         </form></div></div>
     <script src="script.js"></script>
 </body>

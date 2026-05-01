@@ -21,7 +21,7 @@ right: 20px;
 .modal{
     position: relative;
     width: 600px;
-    height: 400px;
+    height: 600px;
     background-color: white;
     top: 50%;
     left: 50%;
@@ -48,17 +48,34 @@ outline: none;
 }
 
 .inputt input::placeholder{
-    color: #ea1bd6;
-    font-size: 20px;
+    color: rgb(114, 114, 114);
+    font-size: 16px;
     text-align: left;
+    text-transform: capitalize;
+    font-family: 'Galindo', cursive;
 }
 
 .inputt input:focus{
     border: 2px solid rgb(255, 0, 0);
 }
 
-.radio div{
+.radio {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.radio div input{
+    width: 50px;
+}
+
+.userform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
